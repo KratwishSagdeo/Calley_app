@@ -1,0 +1,90 @@
+name: get_calley_app
+description: A complete Flutter application for Get Calley with authentication, dashboard, and calling features.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management
+  flutter_riverpod: ^2.4.9
+  riverpod_annotation: ^2.3.3
+
+  # Navigation
+  go_router: ^13.0.1
+
+  # API & Networking
+  dio: ^5.4.0
+  dio_smart_retry: ^6.0.0
+
+  # Storage
+  flutter_secure_storage: ^9.0.0
+  shared_preferences: ^2.2.2
+
+  # UI Components
+  cupertino_icons: ^1.0.6
+  flutter_svg: ^2.0.9
+  cached_network_image: ^3.3.0
+
+  # Form & Input
+  pinput: ^3.0.1
+  pin_code_fields: ^8.0.1
+
+  # Charts
+  fl_chart: ^0.66.0
+
+  # Video Player
+  chewie: ^1.7.5
+  video_player: ^2.8.1
+  url_launcher: ^6.2.2
+
+  # Internationalization
+  intl: ^0.20.2
+  flutter_localizations:
+    sdk: flutter
+
+  # Utilities
+  connectivity_plus: ^5.0.2
+  package_info_plus: ^5.0.1
+  path_provider: ^2.1.1
+
+  # Images & Media
+  image_picker: ^1.0.5
+  permission_handler: ^11.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  build_runner: ^2.4.7
+  riverpod_generator: ^2.3.9
+  custom_lint: ^0.5.7
+  riverpod_lint: ^2.3.7
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/videos/
+    - assets/translations/
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+
+          weight: 400
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
